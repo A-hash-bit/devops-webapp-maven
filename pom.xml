@@ -17,9 +17,9 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
-    <sonar.organization>cloudjunction-devops</sonar.organization>
-    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-    <sonar.login>096b5cb650900767b55f347b7df8a01410b15530</sonar.login>
+    <sonar.projectKey>mini-project</sonar.projectKey>
+    <sonar.host.url>http://34.125.231.45:9000</sonar.host.url>
+    <sonar.login>d270bae14d2e92fe0b9fb319c18fe6b6fb4771ef</sonar.login>
     
   </properties>
 
