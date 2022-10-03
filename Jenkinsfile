@@ -16,6 +16,7 @@ pipeline{
             steps{
             echo "${env.BUILD_ID}"
             echo "${branch_name}"
+                echo "${GIT_COMMIT}
             }
         }    
         stage('Example') {
