@@ -3,6 +3,11 @@ pipeline{
     
     environment { 
         CC = 'clang'
+
+        GIT_COMMIT_SHORT = sh(
+                script: "printf \$(/opt/git/bin/git rev-parse --short ${GIT_COMMIT})",
+                returnStdout: true
+        )
     }
     
     stages{
@@ -17,6 +22,7 @@ pipeline{
             echo "${env.BUILD_ID}"
             echo "${branch_name}"
             echo "${GIT_COMMIT}"
+            echo "${GIT_COMMIT_SHORT}"
             }
         }    
         stage('Example') {
