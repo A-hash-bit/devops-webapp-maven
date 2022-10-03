@@ -15,6 +15,7 @@ pipeline{
         stage("Env Variables"){
             steps{
             echo "${env.BUILD_ID}"
+            echo "${branch_name}"
             }
         }    
         stage('Example') {
