@@ -16,7 +16,7 @@ pipeline{
         }
         stage("Sonar Analysis"){
             steps{
-                withSonarQubeEnv("SonarQubeScaner-4.7.0") {
+                withSonarQubeEnv("sonarQube-9.6.1") {
                // println ${env.SONAR_HOST_URL} 
                 sh "sonar:sonar"
                 }
